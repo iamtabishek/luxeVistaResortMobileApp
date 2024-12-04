@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color">
+
+    <!-- Company Logo -->
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/luxevista_logo"
+        android:contentDescription="Company Logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Confirmation Message Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Confirmed!"
+        android:textSize="32sp"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Confirmation Message -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for your booking!"
+        android:textSize="18sp"
+        android:textColor="@color/primary_color"
+        android:gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your reservation details have been confirmed.
+        We look forward to welcoming you!"
+        android:textSize="16sp"
+        android:textColor="@color/primary_color"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Confirmation Number Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="24dp">
+
+        <!-- Confirmation Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmation Number:"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:paddingEnd="4dp" />
+
+        <!-- Confirmation Value -->
+        <TextView
+            android:id="@+id/confirmationNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC12345"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/backToHomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/secondary_color"
+        android:layout_marginTop="250dp"
+        android:padding="12dp"/>
+</LinearLayout>

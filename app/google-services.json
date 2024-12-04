@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "911215840148",
+    "firebase_url": "https://luxe-vista-app-default-rtdb.firebaseio.com",
+    "project_id": "luxe-vista-app",
+    "storage_bucket": "luxe-vista-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911215840148:android:f6f1b594127ad2176edd81",
+        "android_client_info": {
+          "package_name": "com.example.luxevistaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKUohZgOUGDf5EkiutCIO71jyJsfdmoL4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

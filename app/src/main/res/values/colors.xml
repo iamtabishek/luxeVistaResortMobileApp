@@ -1,0 +1,24 @@
+<resources>
+    <!-- Primary Color Palette -->
+    <color name="primary_color">#1A237E</color> <!-- Dark Navy Blue -->
+    <color name="secondary_color">#FFD700</color> <!-- Gold -->
+    <color name="background_color">#ffffff</color> <!-- Soft Grey for Background -->
+    <color name="white">#ffffff</color>
+    <!-- Text Colors -->
+    <color name="text_color">#000000</color> <!-- Black for primary text -->
+    <color name="hint_color">#504D4D</color> <!-- Grey for hint text -->
+    <color name="error_color">#F44336</color> <!-- Red for error messages -->
+    <color name="red">#FF0000</color> <!--  Red -->
+
+    <!-- Button Colors -->
+    <color name="button_color">#1A237E</color> <!-- Button Color (matches primary) -->
+    <color name="button_disabled_color">#B0BEC5</color> <!-- Disabled Button Color -->
+
+    <!-- Social Media Colors -->
+    <color name="google_color">#DB4437</color> <!-- Google Red -->
+    <color name="facebook_color">#3B5998</color> <!-- Facebook Blue -->
+    <color name="apple_color">#000000</color> <!-- Apple Black -->
+
+    <!-- Additional Colors -->
+    <color name="divider_color">#E0E0E0</color> <!-- Light Grey for dividers -->
+</resources>

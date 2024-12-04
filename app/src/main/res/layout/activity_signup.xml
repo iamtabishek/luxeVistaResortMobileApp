@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/luxevista_logo"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="LuxeVista Logo" />
+
+    <!-- Sign-up Form -->
+    <LinearLayout
+        android:id="@+id/signupForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Full Name Input -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/text_color"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Email Input for Sign-up -->
+        <EditText
+            android:id="@+id/signupEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/text_color"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Password Input for Sign-up -->
+        <EditText
+            android:id="@+id/signupPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Confirm Password Input for Sign-up -->
+        <EditText
+            android:id="@+id/signupConfirmPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm your password"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Sign-up Button -->
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary_color"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tv_login_redirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log In"
+            android:textColor="@color/primary_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

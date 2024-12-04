@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.luxevistaapp">
+
+    <!-- Internet permission for Firebase connectivity and image loading -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/luxevista_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/luxevista_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LuxeVistaApp"
+        tools:targetApi="31">
+
+        <!-- Launch Activity (Main Entry Point) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+        <activity android:name=".SignupActivity" android:exported="false" />
+        <activity android:name=".MobileVerificationActivity" android:exported="false" />
+        <activity android:name=".DashboardActivity" android:exported="false" />
+        <activity android:name=".ProfileManagementActivity" android:exported="false" />
+        <activity android:name=".ChangeNameActivity" android:exported="false" />
+        <activity android:name=".ChangeEmailActivity" android:exported="false" />
+        <activity android:name=".ChangePhoneNumberActivity" android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity" android:exported="false" />
+        <activity android:name=".ResetPasswordActivity" android:exported="false" />
+        <activity android:name=".RoomBookingDetailsActivity" android:exported="false" />
+        <activity android:name=".BookingSummaryActivity" android:exported="false" />
+        <activity android:name=".ServiceReservationActivity" android:exported="false" />
+        <activity android:name=".BookingConfirmationActivity" android:exported="false" />
+
+        <activity android:name=".ReservationConfirmationActivity" android:exported="false" />
+        <activity android:name=".ReservationSummaryActivity" android:exported="false" />
+        <activity android:name=".ServiceReservationDetailsActivity" android:exported="false" />
+
+        <activity android:name=".MyBookingsActivity" android:exported="false" />
+        <activity android:name=".MyReservationsActivity" android:exported="false" />
+
+        <activity android:name=".OffersActivity" android:exported="false" />
+        <activity android:name=".UserDetailsActivity" android:exported="false" />
+
+
+        <!-- Room Booking Activity -->
+        <activity
+            android:name=".RoomBookingActivity"
+            android:exported="false" />
+
+        <!-- Firebase Initialization Metadata -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/luxevista_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/primary_color" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

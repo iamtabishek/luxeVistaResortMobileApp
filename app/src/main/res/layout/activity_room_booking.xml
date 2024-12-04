@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/luxevista_logo"
+        android:contentDescription="Company Logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Heading for Room Booking -->
+    <TextView
+        android:id="@+id/roomBookingHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Booking"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Filter and Sort Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Filter by Room Type -->
+        <Spinner
+            android:id="@+id/roomTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary_color"
+            android:entries="@array/room_types" />
+
+        <!-- Price Range Filter -->
+        <Spinner
+            android:id="@+id/priceRangeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary_color"
+            android:entries="@array/price_ranges" />
+
+        <!-- Sort Button -->
+        <Button
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary_color"
+            android:layout_marginStart="8dp"
+            android:padding="10dp" />
+    </LinearLayout>
+    <!-- Room List Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/roomList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Room Card 1: Ocean View Suite -->
+
+            <!-- Room Card 2: Deluxe Room -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/roomImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="Ocean View Suite"
+                    android:src="@drawable/ocean_view_suite" />
+
+                <TextView
+                    android:id="@+id/roomDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Ocean View Suite"
+                    android:textColor="@color/primary_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/roomDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spacious suite with a stunning ocean view, featuring a king-size bed, luxury amenities, and a private balcony."
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/roomPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="$250 per night"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/bookRoomButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/primary_color"
+                    android:padding="12dp"
+                    android:text="Book Now"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <!-- Back Button at the Bottom -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/secondary_color"
+        android:padding="12dp"
+        android:text="Back"
+        android:textColor="@android:color/white" />
+</LinearLayout>

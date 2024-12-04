@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/luxevista_logo"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="LuxeVista Logo" />
+
+    <!-- Login Form -->
+    <LinearLayout
+        android:id="@+id/loginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:drawablePadding="15dp"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="@color/primary_color"
+            android:gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end"
+            android:paddingEnd="16dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary_color"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Signup Link -->
+        <TextView
+            android:id="@+id/tv_signup_redirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Sign Up"
+            android:textColor="@color/primary_color"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/luxevista_logo"
+        android:contentDescription="Company Logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Heading for Room Booking -->
+    <TextView
+        android:id="@+id/serviceReservationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Reservation"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+
+    <!-- Service List Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/serviceList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Room Card 1: Ocean View Suite -->
+
+            <!-- Room Card 2: Deluxe Room -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/serviceImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="Spa Treatments"
+                    android:src="@drawable/spa_treatments" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spa Treatments"
+                    android:textSize="18sp"
+                    android:textColor="@color/primary_color"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indulge in a relaxing spa treatment to unwind and rejuvenate during your stay."
+                    android:textSize="14sp"
+                    android:textColor="@color/primary_color" />
+
+                <!-- Hourly Rate -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hourly Rate: $50"
+                    android:textSize="14sp"
+                    android:textColor="@color/secondary_color"
+                    android:paddingTop="4dp" />
+
+                <Button
+                    android:id="@+id/reserveServiceButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reserve Now"
+                    android:backgroundTint="@color/primary_color"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Back Button at the Bottom -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/secondary_color"
+        android:padding="12dp"
+        android:text="Back"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

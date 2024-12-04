@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-0dp"
+        android:src="@drawable/luxevista_logo"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="LuxeVista Logo" />
+
+    <!-- Heading for Changing Email -->
+    <TextView
+        android:id="@+id/changeEmailHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Email Address"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Email Input Form -->
+    <LinearLayout
+        android:id="@+id/emailChangeForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Current Email Input -->
+        <EditText
+            android:id="@+id/currentEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your current email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/text_color"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- New Email Input -->
+        <EditText
+            android:id="@+id/newEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your new email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/text_color"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Confirm New Email Input -->
+        <EditText
+            android:id="@+id/confirmNewEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm your new email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/text_color"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/text_color"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+
+        <!-- Change Email Button -->
+        <Button
+            android:id="@+id/changeEmailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Email"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="@color/primary_color"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Error Message for Email Change -->
+        <TextView
+            android:id="@+id/tv_invalid_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Error changing email. Please try again."
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/secondary_color"
+            android:layout_marginTop="15dp"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>

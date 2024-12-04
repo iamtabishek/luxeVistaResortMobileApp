@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/luxevista_logo"
+            android:contentDescription="LuxeVista Logo"
+            android:layout_gravity="center"
+            android:paddingBottom="24dp" />
+
+        <!-- Section Header: Exclusive Offers -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exclusive LuxeVista Offers"
+            android:textSize="26sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Offers Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Beach Tours Offer -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/beachToursImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/beach_tour_image"
+                    android:contentDescription="Beach Tours"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beach Tours"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_color"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <!-- Water Sports Offer -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/waterSportsImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/water_sport_image"
+                    android:contentDescription="Water Sports"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Water Sports"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_color"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <!-- Dining Offer -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/diningImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fine_dining_image"
+                    android:contentDescription="Fine Dining"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fine Dining"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary_color"
+                    android:gravity="center"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Section Header: Nearby Attractions -->
+
+        <!-- Nearby Attractions Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical">
+
+            <!-- Beach Tours Info -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏖️ Beach Tours"
+                android:textSize="18sp"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relax with guided tours of our pristine beaches and coastal wonders."
+                android:textSize="16sp"
+                android:textColor="@color/primary_color"
+                android:paddingBottom="16dp" />
+
+            <!-- Water Sports Info -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚤 Water Sports"
+                android:textSize="18sp"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience thrilling water sports, including jet skiing, kayaking, and more."
+                android:textSize="16sp"
+                android:textColor="@color/primary_color"
+                android:paddingBottom="16dp" />
+
+            <!-- Fine Dining Info -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍽️ Fine Dining"
+                android:textSize="18sp"
+                android:textColor="@color/primary_color"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Savor local and international cuisines at nearby top-rated restaurants."
+                android:textSize="16sp"
+                android:textColor="@color/primary_color"
+                android:paddingBottom="8dp" />
+
+        </LinearLayout>
+
+        <!-- Notifications Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="!!! Stay Updated !!!"
+            android:textSize="26sp"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingTop="24dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Notifications Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receive updates on special hotel events, exclusive discounts, and service updates directly on your device. Don't miss out on the best LuxeVista has to offer!"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/primary_color"
+            android:paddingBottom="16dp" />
+
+
+        <!-- Notifications Button -->
+        <Button
+            android:id="@+id/enableNotificationsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Notifications"
+            android:backgroundTint="@color/primary_color"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/backToHomeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/secondary_color"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:gravity="center"
+    android:background="@color/background_color">
+
+    <!-- Company Logo -->
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/luxevista_logo"
+        android:contentDescription="Company Logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Welcome Message Layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <!-- "Welcome!" Text -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:layout_marginEnd="4dp" />
+
+        <!-- "User" Text -->
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color" />
+
+    </LinearLayout>
+
+    <!-- Profile Management Button -->
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Management"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Room Booking Button -->
+    <Button
+        android:id="@+id/roomBookingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room Booking"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Service Reservation Button -->
+    <Button
+        android:id="@+id/serviceReservationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Reservation"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- My Bookings Button -->
+    <Button
+        android:id="@+id/bookingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Room Bookings"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- My Bookings Button -->
+    <Button
+        android:id="@+id/reservationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Service Reservations"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Notifications Button -->
+    <Button
+        android:id="@+id/notificationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore Offers &amp; Attractions"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/secondary_color"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+</LinearLayout>

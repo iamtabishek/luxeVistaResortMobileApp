@@ -1,0 +1,15 @@
+<resources>
+    <string-array name="room_types">
+        <item>All</item>
+        <item>Deluxe</item>
+        <item>Suite</item>
+        <item>Standard</item>
+    </string-array>
+
+    <string-array name="price_ranges">
+        <item>All</item>
+        <item>Below $100</item>
+        <item>$100 - $200</item>
+        <item>Above $200</item>
+    </string-array>
+</resources>

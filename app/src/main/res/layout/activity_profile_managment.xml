@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color">
+
+    <!-- Company Logo -->
+    <ImageView
+        android:id="@+id/companyLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/luxevista_logo"
+        android:contentDescription="Company Logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Page Header -->
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Information to Update"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Change Name Button -->
+    <Button
+        android:id="@+id/changeNameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Name"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:padding="12dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Change Phone Number Button -->
+    <Button
+        android:id="@+id/changePhoneNumberButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Phone Number"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:padding="12dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Change Email Button -->
+    <Button
+        android:id="@+id/changeEmailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Email"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:padding="12dp"
+        android:layout_marginTop="10dp" />
+
+    <!-- Change Password Button -->
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_color"
+        android:padding="12dp"
+        android:layout_marginTop="10dp" />
+
+
+        <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/secondary_color"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

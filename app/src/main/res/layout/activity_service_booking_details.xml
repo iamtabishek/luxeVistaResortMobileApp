@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo Image at the Top -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/luxevista_logo"
+            android:layout_gravity="center"
+            android:contentDescription="Logo" />
+
+        <!-- Service Type Name -->
+        <TextView
+            android:id="@+id/serviceNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spa Treatments"
+            android:textSize="24sp"
+            android:textColor="@color/primary_color"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/serviceImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/deluxe_room"
+            android:layout_gravity="center" />
+
+
+
+        <!-- Service Description -->
+        <TextView
+            android:id="@+id/serviceDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indulge in a relaxing spa treatment to unwind and rejuvenate during your stay."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/primary_color" />
+
+        <!-- Service Price -->
+        <TextView
+            android:id="@+id/servicePriceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: $75 per hour"
+            android:textSize="18sp"
+            android:textColor="@color/primary_color"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:paddingTop="12dp"
+            android:textAlignment="viewStart" />
+
+        <!-- Date Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="viewStart" />
+
+        <!-- Date Selection -->
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:padding="10dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center_vertical" />
+
+        <!-- Time Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="viewStart" />
+
+        <!-- Time Selection -->
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Time"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:padding="10dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center_vertical" />
+
+
+        <!-- Hour Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hours:"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="viewStart" />
+
+        <!-- Hour Selection -->
+        <EditText
+            android:id="@+id/hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Hour Count"
+            android:textSize="16sp"
+            android:textColor="@color/primary_color"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/divider_color"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center_vertical" />
+
+
+                <!-- Book Now Button -->
+        <Button
+            android:id="@+id/reserveNowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/primary_color"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/secondary_color"
+            android:layout_marginTop="10dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>
